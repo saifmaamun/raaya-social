@@ -1,0 +1,161 @@
+.hero {
+    width: 100%;
+    padding: 80px 0;
+    background: #f8f8f8;
+}
+
+.hero-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+}
+
+.hero-text-section{
+    display: flex;
+    width: 560px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap:12px
+}
+.info-text{
+display: flex;
+justify-content: start;
+gap: 12px;
+padding: 8px 16px;
+align-items: center;
+border-radius: 16px;
+background: #FFF;
+}
+.info-text p{
+color:  #344054;
+text-align: center;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.hero-text {
+text-align: start;
+color: #000;
+}
+.hero-text p{
+    color:  #344054;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 65px;
+    letter-spacing: -0.96px;
+}
+
+.hero .highlight {
+    background: linear-gradient(90deg, #2B034D 26.84%, #B564F7 57.46%, #D37EF0 86.78%, #EF90FF 100%);
+    background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+
+.hero .price {
+    color: #e63946;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 15px 0;
+}
+
+.hero-buttons {
+    margin: 20px 0;
+}
+
+.btn-primary, .btn-secondary {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #6a0dad;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.btn-primary:hover {
+    background: #5a0c9d;
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 2px solid #6a0dad;
+    color: #6a0dad;
+}
+
+.btn-secondary:hover {
+    background: #6a0dad;
+    color: white;
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.icons img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.hero-media img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 80%;
+        text-align: center;
+    }
+
+    .social-icons {
+        align-items: center;
+    }
+}

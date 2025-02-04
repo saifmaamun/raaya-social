@@ -1,0 +1,110 @@
+.header {
+    /* display: flex; */
+    padding: 16px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #FFF;
+}
+
+.header-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 89.547px;
+height: 68px;
+}
+
+.header-nav {
+    display: flex;
+
+}
+
+.nav-links {
+display: flex;
+align-items: center;
+gap: 32px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+color: #344054;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 28.8px
+}
+
+.header-buttons {
+    display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.header-btn{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    padding: 8px 27px;
+    border-radius: 24px;
+}
+
+.login-btn {
+    color: #000;
+    border: 1px solid #D0D5DD;
+}
+
+.cta-btn {
+    
+    color:  #6a0dad;
+    border: 1px solid #6a0dad;
+
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: #333;
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: white;
+        width: 100%;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links {
+        flex-direction: column;
+        padding: 10px;
+    }
+}
