@@ -20,12 +20,12 @@
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    gap:12px
+    row-gap:12px;
 }
 .info-text{
 display: flex;
 justify-content: start;
-gap: 12px;
+margin-bottom: 12px;
 padding: 8px 16px;
 align-items: center;
 border-radius: 16px;
@@ -37,29 +37,35 @@ text-align: center;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
-line-height: normal;
+line-height: 32px;
+
 }
 
 .hero-text {
 text-align: start;
 color: #000;
 }
-.hero-text p{
-    color:  #344054;
-font-family: Inter;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 32px;
-}
 
-.hero h1 {
+.hero-text h1 {
     font-size: 48px;
     font-style: normal;
     font-weight: 600;
     line-height: 65px;
     letter-spacing: -0.96px;
+    margin-bottom: 12px;
 }
+
+.hero-text p{
+color:  #344054;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px;
+margin-bottom: 12px;
+}
+
+
 
 .hero .highlight {
     background: linear-gradient(90deg, #2B034D 26.84%, #B564F7 57.46%, #D37EF0 86.78%, #EF90FF 100%);
@@ -74,57 +80,88 @@ line-height: 32px;
     font-weight: bold;
 }
 
-.hero p {
-    font-size: 1.2rem;
-    color: #555;
-    margin: 15px 0;
+.hero-buttons{
+display: flex;
+align-items: center;
+gap: 24px;
 }
-
-.hero-buttons {
-    margin: 20px 0;
+.hero-buttons a {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 8px 27px;
+    border-radius: 24px;
 }
 
 .btn-primary, .btn-secondary {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s;
+    transition: 0.9s;
 }
 
 .btn-primary {
-    background: #6a0dad;
-    color: #fff;
-    margin-right: 10px;
+    color:  #fff;
+    background: linear-gradient(177deg, #B564F7 8.45%, #6A2F9B 98.78%);
 }
 
 .btn-primary:hover {
-    background: #5a0c9d;
+    background: #fff;
+    color:#B262F3 ;
+    border: 1px solid #B262F3;
 }
 
 .btn-secondary {
-    background: transparent;
-    border: 2px solid #6a0dad;
-    color: #6a0dad;
+    color: #B262F3;
+    border: 1px solid #B262F3;
 }
 
 .btn-secondary:hover {
-    background: #6a0dad;
-    color: white;
+    color:  #fff;
+    background: linear-gradient(177deg, #B564F7 8.45%, #6A2F9B 98.78%);
 }
 
 .social-icons {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+display: flex;
+justify-content: end;
+}
+.social-icons-content {
+margin-top: 20px;
+display: inline-flex;
+padding: 20px 24px;
+flex-direction: column;
+align-items: flex-start;
+gap: 12px;
+border-radius: 16px;
+background: #FFF;
 }
 
-.icons img {
-    width: 30px;
-    margin-right: 10px;
+.social-icons-content span{
+color: #000;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+.icons img{
+width: 48px;
+height: 48px;
+flex-shrink: 0;
+padding: 7px;
+border-radius: 100%;
+background-color: #E6E6E6;
+}
+
+.hero-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .hero-media img {
