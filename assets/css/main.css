@@ -43,11 +43,42 @@ text-decoration: none;
     font-weight: bold;
     transition: background 0.3s ease;
     cursor: pointer;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 8px 27px;
+    border-radius: 24px;
 }
 
 .btn:hover {
     background: #4500b5;
 }
+
+.btn-primary, .btn-secondary {
+    transition: 0.9s;
+}
+
+.btn-primary {
+    color:  #fff;
+    background: linear-gradient(177deg, #B564F7 8.45%, #6A2F9B 98.78%);
+}
+
+.btn-primary:hover {
+    background: #fff;
+    color:#B262F3 ;
+    border: 1px solid #B262F3;
+}
+
+.btn-secondary {
+    color: #B262F3;
+    border: 1px solid #B262F3;
+}
+
+.btn-secondary:hover {
+    color:  #fff;
+    background: linear-gradient(177deg, #B564F7 8.45%, #6A2F9B 98.78%);
+}
+
 
 /* Layout */
 section {
