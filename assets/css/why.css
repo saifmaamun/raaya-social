@@ -1,0 +1,40 @@
+.why{
+display:flex;
+padding: 40px 120px;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+}
+
+.why-content{
+    display: flex;
+align-items: center;
+gap: 48px;
+align-self: stretch;
+}
+
+.why-description{
+    display: flex;
+    width: 672px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+.why-description h1{
+    color:  #000;
+    text-align: left;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 124%; /* 59.52px */
+    letter-spacing: -0.48px;
+}
+.why-description p{
+    color: #344054;
+    text-align: left;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
